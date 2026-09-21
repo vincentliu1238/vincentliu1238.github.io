@@ -9,6 +9,7 @@ h3{
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .container{
@@ -84,3 +85,9 @@ ul,li{
     gap: 30px;
 }
 
+a{
+    color: blue
+}
+a:hover{
+    color:whitesmoke;
+}
