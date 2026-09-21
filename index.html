@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <nav class="navigation">
-    <ul>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Contact</li>
-    </ul>
-    </nav>
-    <h1>Vincent Liu</h1>
-    <h3>Computer Science Student</h3>
-    <img src="assets/placeholder.png">
-</header>
 <body>
+    <div class="container">
+        <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+            <h1 class="name">Vincent Liu</h1>
+            <h3 class="title">Computer Science Student</h3>
+            <img id="profile" class= "profile" src="assets/placeholder.png">
+        </header>
+    </div>
+
     <main>
         <section class="info">
             <h3>Technical Skills: </h3>
@@ -28,9 +32,22 @@
                     <th>Others</th>
                 </tr>
                 <tr>
-                    <td>Python, Java, C++</td>
-                    <td>Git, GitHub, Visual Studio Code</td>
-                    <td>Object-Oriented Programming, Data Structures, Microsoft 365, Excel</td>
+                    <td><ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul></td>
+                    <td><ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Visual Studio Code</li>
+                    </ul></td>
+                    <td><ul>
+                        <li>Object-Oriented Programming</li>
+                        <li>Data Structures</li>
+                        <li>Microsoft 365</li>
+                        <li>Excel</li>
+                    </ul></td>
                 </tr>
             </table>
         </section>
@@ -43,18 +60,38 @@
                     <th>Mathematics</th>
                 </tr>
                 <tr>
-                    <td>Data Structures and Algorithms, Software Analysis and Design, Practical Web Development</td>
-                    <td>Calculus, Matrix Algebra, Discrete Mathematics, Statistics</td>
+                    <td>
+                        <ul>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Software Analysis and Design</li>
+                            <li>Practical Web Development</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Calculus</li>
+                            <li>Matrix Algebra</li>
+                            <li>Discrete Mathematics</li>
+                            <li>Statistics</li>
+                        </ul>
+                    </td>
                 </tr>
             </table>     
         </section>
 
         <section class="info">
             <h3>Education: </h3>
-            <h4>Hunter College</h4>
-            <p>August 2024 - Present | New York, NY</p>
+            <div class = school>
+                <h4>Hunter College</h4>
+                <h4>August 2024 - Present | New York, NY</h4>
+            </div>
+            <ul>
+                <li id = "degree">Bachelors of Arts in Computer Science</li>
+                <li id = "degree">Current GPA: 3.5</li>
+            </ul>
         </section>
     </main>
+
     <footer>
         <p>Vincent Liu Resume: 2026</p>
     </footer>
