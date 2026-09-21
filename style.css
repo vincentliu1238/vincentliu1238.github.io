@@ -4,6 +4,15 @@ body{
     background-attachment: fixed;
 }
 
+.name{
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*Specificity Issue #1
+Here h3 is overriden by the class .title as class has higher specificity
+than an element, as .title's (0,1,0) is higher on the value than h3's (0,0,1)*/
 h3{
     font-size: 20px;
     margin-top: 10px;
@@ -11,6 +20,14 @@ h3{
     font-weight: bold;
     border-bottom: 1px solid whitesmoke;
 }
+
+.title{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    border:none;
+}
+/*Issue End #1 (Class vs Element)*/
 
 .container{
     display: flex;
@@ -29,22 +46,19 @@ header{
     list-style-type: none;
 }
 
-.name{
-    font-size: 30px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.title{
-    font-size: 20px;
-    margin-top: 10px;
-    text-align: center;
-}
-
+/*Specificity Issue #2
+Here Id overrides class as Id has a higher specificity than
+class, as (1,0,0) is higher on the values than (0,1,0)*/
 #profile{
     align-items: center;
     border-radius: 50%;
 }
+
+.placeholder{
+    display:flex;
+    border-radius: 0%;
+}
+/*Issue End #2 (Id vs Class)*/
 
 main{
     display: flex;
@@ -69,6 +83,9 @@ th, td{
     border: 1px solid whitesmoke;
 }
 
+/*Here Id #degree was used to overwrite the li element where it removes the bullet points
+from the lists. Here id won because its specificity is (1,0,0) which is higher than
+the elements (0,0,1). */
 ul,li{
     list-style-type: none;
     padding: 5px;
@@ -78,6 +95,7 @@ ul,li{
 #degree{
     list-style-type: circle;
 }
+/*Issue End #2 (Id vs Element)*/
 
 .school{
     display: flex;
