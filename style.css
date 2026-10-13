@@ -15,6 +15,9 @@ hr{
     border: 1px solid whitesmoke;
 }
 
+footer{
+    color: whitesmoke;
+}
 /*Specificity Issue #1
 Here h3 is overriden by the class .title as class has higher specificity
 than an element, as .title's (0,1,0) is higher on the value than h3's (0,0,1)*/
