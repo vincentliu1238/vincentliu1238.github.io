@@ -4,4 +4,6 @@ The path an HTTP request takes from the browser to the GitHub Pages site is that
 
 Homework 2 Reflection:
 
-The difference between flex-direction: row and flex-direction: column is 
+The difference between flex-direction: row and flex-direction: column is the orientation that it makes the flex item go in for row it makes it so that the flex item is displayed horizontally one by one while column displays them vertically on top of each other. 
+
+It is important to use relative units instead of pixels when making a responsive design as relative units scale and resizes depending on the users screen size or browser settings which ensures that items are scaled to their correct size when viewed from a different screen. 
