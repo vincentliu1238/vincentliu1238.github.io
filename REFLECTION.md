@@ -1,1 +1,7 @@
+Homework 1 Reflection:
+
 The path an HTTP request takes from the browser to the GitHub Pages site is that the it first checks the domain name such as github.com then the specific path it wants to take if there is any. This then gets translated into an ip address for the browser which uses HTTP to request the server for what it needs and once this reaches the GitHub Pages Site it will respond back and display what was requested in the browser.
+
+Homework 2 Reflection:
+
+The difference between flex-direction: row and flex-direction: column is 
